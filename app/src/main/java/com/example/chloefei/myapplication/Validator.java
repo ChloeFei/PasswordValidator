@@ -7,9 +7,9 @@ public class Validator {
     public int Name(){
 
         if(s.equals("password"))
-            return 0;
+            return 0;   //weak pwd
         else
-            return 1;
+            return 1;   //strong
 
     }
 
