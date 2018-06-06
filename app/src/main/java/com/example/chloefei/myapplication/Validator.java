@@ -20,8 +20,30 @@ public class Validator {
             return 0;
     }
 
+
+    public int ContainsSpecial(){
+        if(s.contains("#||@||$||%||^||&||*"))
+            return 1;
+        else
+            return 0;
+    }
+
+    public int Digits(){
+        if (s.matches(".*\\d+.*"))
+            return 1;
+        else
+            return 0;
+    }
+
+    public int Case(){
+        if (s.equals(s.toLowerCase())||s.equals(s.toUpperCase()))
+            return 0;
+        else
+            return 1;
+    }
+
     public int pass(){
-        return Name()+Length();
+        return Name()+Length()+ContainsSpecial()+Digits()+Case();
     }
 
 }
