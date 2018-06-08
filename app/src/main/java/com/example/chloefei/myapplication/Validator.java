@@ -4,6 +4,10 @@ public class Validator {
 
     String s;
 
+    public Validator(String str){
+        this.s=str;
+    }
+
     public int Name(){
 
         if(s.equals("password"))
@@ -22,7 +26,9 @@ public class Validator {
 
 
     public int ContainsSpecial(){
-        if(s.contains("#||@||$||%||^||&||*"))
+        //"#"||"@"||"$"||"%"||"^"||"&"||"*"
+        if(s.contains("#")||s.contains("@")||s.contains("$")||s.contains("%")||s.contains("^")||
+                s.contains("&")||s.contains("*")||s.contains("!")||s.contains(","))
             return 1;
         else
             return 0;
