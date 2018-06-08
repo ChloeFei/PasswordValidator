@@ -3,7 +3,9 @@ package com.example.chloefei.myapplication;
 public class Validator {
 
     String s;
-
+    public Validator(String str){
+        this.s=str;
+    }
     public int Name(){
 
         if(s.equals("password"))

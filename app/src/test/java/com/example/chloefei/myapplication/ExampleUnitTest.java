@@ -27,10 +27,10 @@ public class ExampleUnitTest {
 
 
         assertEquals(s1.pass(),1);
-        assertEquals(s2.pass(),3);
+        assertEquals(s2.pass(),2);
         assertEquals(s3.pass(),1);
-        assertEquals(s4.pass(),2);
-        assertEquals(s5.pass(),5);
+        assertEquals(s4.pass(),1);
+        assertEquals(s5.pass(),4);
 
     }
 }
